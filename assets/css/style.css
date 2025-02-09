@@ -828,7 +828,7 @@ body.nav-active { overflow: hidden; }
 
 .hero .section-subtitle::after { margin-block: 14px 20px; }
 
-.hero-text { margin-block: 60px 40px; }
+.hero-text { margin-block: 20px 40px; }
 
 .hero .btn { margin-inline: auto; }
 
