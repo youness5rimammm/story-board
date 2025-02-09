@@ -3,7 +3,7 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 codewithsadee
+ * copyright 2022 story-board
  */
 
 
@@ -1386,8 +1386,8 @@ textarea.input-field {
 .footer-link:is(:hover, :focus-visible) { color: var(--gold-crayola); }
 
 .copyright {
-  color: var(--quick-silver);
-  line-height: var(--lineHeight-3);
+  color: var(--black);
+  line-height: 1.3em;
 }
 
 .copyright .link {
