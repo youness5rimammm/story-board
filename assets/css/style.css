@@ -310,7 +310,7 @@ body.nav-active { overflow: hidden; }
 .img-cover {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: fit;
   opacity: 0.7;
 }
 
@@ -469,7 +469,7 @@ body.nav-active { overflow: hidden; }
 
 .has-bg-image {
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: fit;
   background-position: center;
 }
 
@@ -779,8 +779,8 @@ body.nav-active { overflow: hidden; }
 .hero {
   position: relative;
   padding-block: 120px;
-  min-height: 100vh;
-  max-height: 200vh;
+  margin-bottom: 90px;
+  min-height: 120vh;
   overflow: hidden;
   z-index: 1;
 }
