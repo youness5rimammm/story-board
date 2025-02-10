@@ -780,7 +780,7 @@ body.nav-active { overflow: hidden; }
   position: relative;
   padding-block: 120px;
   margin-bottom: 90px;
-  min-height: 120vh;
+  min-height: 150vh;
   overflow: hidden;
   z-index: 1;
 }
