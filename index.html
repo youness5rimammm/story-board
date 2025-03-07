@@ -191,7 +191,7 @@
 
      
       <section class="hero text-center" aria-label="home" id="home">
-
+       
         <ul class="hero-slider" data-hero-slider>
 
           <li class="slider-item active" data-hero-slider-item>
@@ -296,6 +296,7 @@
       -->
 
       <section class="section about about-conet text-center" aria-labelledby="about-label" id="about">
+        
         <div class="container">
 
           <div class="about-content">
@@ -327,7 +328,16 @@
               <!-- <p class="label-2 section-subtitle" id="about-label">Our Story</p> -->
   
               
-  
+              <div class="logo-containddder" style="position: relative; width: 100%; height: 100%;">
+                <!-- Your rotating text component with unique class names -->
+                <div class="logo-container">
+                  <div class="center-logo">
+                      <!-- Placeholder for your image -->
+                      <img src="./assets/images/Logo_1.png" width="28" height="41" loading="lazy" style="mix-blend-mode: color-burn;" alt="BIZNET COLLEGE">
+                  </div>
+                  <div class="rotating-circle" id="rotating-circle"></div>
+              </div>
+            </div>
               <p  class="section-text section-text-right">
                 Storyboards are a brand-new social media solution to better share your pictures and tell your stories. You can graphically organize your pictures and stories around specific topics and share your thoughts, feelings, and adventures with your friends and family everywhere and forever.
 
@@ -785,7 +795,31 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-
+<script>  document.addEventListener('DOMContentLoaded', function() {
+  const text = " - STORY BOARDS - PRESERVING PRECIOUS MEMORIES";
+    const circle = document.getElementById('rotating-circle');
+    const radius = 105; // Adjusted radius for smaller size
+    
+    // Calculate angle between letters for even distribution
+    const angleStep = (2 * Math.PI) / text.length;
+    
+    // Create and position each letter
+    for (let i = 0; i < text.length; i++) {
+        const span = document.createElement('span');
+        span.className = 'rotating-letter';
+        span.textContent = text[i];
+        
+        // Calculate position on the circle
+        const angle = i * angleStep;
+        const x = radius * Math.cos(angle);
+        const y = radius * Math.sin(angle);
+        
+        // Position and rotate the letter
+        span.style.transform = `translate(${x}px, ${y}px) rotate(${angle + Math.PI/2}rad)`;
+        
+        circle.appendChild(span);
+    }
+  });</script>
   <!-- 
     - ionicon link
   -->
